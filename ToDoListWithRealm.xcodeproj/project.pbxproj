@@ -9,21 +9,40 @@
 /* Begin PBXBuildFile section */
 		167BE49D2C5A920300E8E7CA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 167BE49C2C5A920300E8E7CA /* AppDelegate.swift */; };
 		167BE49F2C5A920300E8E7CA /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 167BE49E2C5A920300E8E7CA /* SceneDelegate.swift */; };
-		167BE4A12C5A920300E8E7CA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 167BE4A02C5A920300E8E7CA /* ViewController.swift */; };
-		167BE4A42C5A920300E8E7CA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 167BE4A22C5A920300E8E7CA /* Main.storyboard */; };
 		167BE4A62C5A920600E8E7CA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 167BE4A52C5A920600E8E7CA /* Assets.xcassets */; };
 		167BE4A92C5A920600E8E7CA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 167BE4A72C5A920600E8E7CA /* LaunchScreen.storyboard */; };
+		167BE4BD2C5A98C400E8E7CA /* ToDoListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 167BE4BC2C5A98C400E8E7CA /* ToDoListViewController.swift */; };
+		167BE4C02C5A990B00E8E7CA /* ToDoListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 167BE4BF2C5A990B00E8E7CA /* ToDoListCell.swift */; };
+		167BE4CB2C5A9A2800E8E7CA /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = 167BE4CA2C5A9A2800E8E7CA /* SnapKit */; };
+		167BE4CE2C5A9A6600E8E7CA /* RealmSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 167BE4CD2C5A9A6600E8E7CA /* RealmSwift */; };
+		167BE4D02C5A9B7900E8E7CA /* ToDoListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 167BE4CF2C5A9B7900E8E7CA /* ToDoListViewModel.swift */; };
+		167BE4D22C5AA1C200E8E7CA /* ToDoListModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 167BE4D12C5AA1C200E8E7CA /* ToDoListModel.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		167BE4C82C5A998C00E8E7CA /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		167BE4992C5A920300E8E7CA /* ToDoListWithRealm.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ToDoListWithRealm.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		167BE49C2C5A920300E8E7CA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		167BE49E2C5A920300E8E7CA /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		167BE4A02C5A920300E8E7CA /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		167BE4A32C5A920300E8E7CA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		167BE4A52C5A920600E8E7CA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		167BE4A82C5A920600E8E7CA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		167BE4AA2C5A920600E8E7CA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		167BE4BC2C5A98C400E8E7CA /* ToDoListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDoListViewController.swift; sourceTree = "<group>"; };
+		167BE4BF2C5A990B00E8E7CA /* ToDoListCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDoListCell.swift; sourceTree = "<group>"; };
+		167BE4CF2C5A9B7900E8E7CA /* ToDoListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDoListViewModel.swift; sourceTree = "<group>"; };
+		167BE4D12C5AA1C200E8E7CA /* ToDoListModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDoListModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +50,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				167BE4CE2C5A9A6600E8E7CA /* RealmSwift in Frameworks */,
+				167BE4CB2C5A9A2800E8E7CA /* SnapKit in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -42,6 +63,7 @@
 			children = (
 				167BE49B2C5A920300E8E7CA /* ToDoListWithRealm */,
 				167BE49A2C5A920300E8E7CA /* Products */,
+				167BE4C42C5A998C00E8E7CA /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -56,15 +78,80 @@
 		167BE49B2C5A920300E8E7CA /* ToDoListWithRealm */ = {
 			isa = PBXGroup;
 			children = (
-				167BE49C2C5A920300E8E7CA /* AppDelegate.swift */,
-				167BE49E2C5A920300E8E7CA /* SceneDelegate.swift */,
-				167BE4A02C5A920300E8E7CA /* ViewController.swift */,
-				167BE4A22C5A920300E8E7CA /* Main.storyboard */,
-				167BE4A52C5A920600E8E7CA /* Assets.xcassets */,
-				167BE4A72C5A920600E8E7CA /* LaunchScreen.storyboard */,
+				167BE4B02C5A966C00E8E7CA /* App */,
+				167BE4B22C5A968500E8E7CA /* Modules */,
+				167BE4B12C5A967900E8E7CA /* Resourse */,
 				167BE4AA2C5A920600E8E7CA /* Info.plist */,
 			);
 			path = ToDoListWithRealm;
+			sourceTree = "<group>";
+		};
+		167BE4B02C5A966C00E8E7CA /* App */ = {
+			isa = PBXGroup;
+			children = (
+				167BE49E2C5A920300E8E7CA /* SceneDelegate.swift */,
+				167BE49C2C5A920300E8E7CA /* AppDelegate.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		167BE4B12C5A967900E8E7CA /* Resourse */ = {
+			isa = PBXGroup;
+			children = (
+				167BE4A72C5A920600E8E7CA /* LaunchScreen.storyboard */,
+				167BE4A52C5A920600E8E7CA /* Assets.xcassets */,
+			);
+			path = Resourse;
+			sourceTree = "<group>";
+		};
+		167BE4B22C5A968500E8E7CA /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				167BE4B82C5A989100E8E7CA /* Model */,
+				167BE4BA2C5A98A100E8E7CA /* ViewController */,
+				167BE4BB2C5A98A800E8E7CA /* ViewModel */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		167BE4B82C5A989100E8E7CA /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				167BE4D12C5AA1C200E8E7CA /* ToDoListModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		167BE4BA2C5A98A100E8E7CA /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				167BE4BE2C5A98F800E8E7CA /* Cell */,
+				167BE4BC2C5A98C400E8E7CA /* ToDoListViewController.swift */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		167BE4BB2C5A98A800E8E7CA /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				167BE4CF2C5A9B7900E8E7CA /* ToDoListViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		167BE4BE2C5A98F800E8E7CA /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				167BE4BF2C5A990B00E8E7CA /* ToDoListCell.swift */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		167BE4C42C5A998C00E8E7CA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -77,12 +164,17 @@
 				167BE4952C5A920300E8E7CA /* Sources */,
 				167BE4962C5A920300E8E7CA /* Frameworks */,
 				167BE4972C5A920300E8E7CA /* Resources */,
+				167BE4C82C5A998C00E8E7CA /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
 			name = ToDoListWithRealm;
+			packageProductDependencies = (
+				167BE4CA2C5A9A2800E8E7CA /* SnapKit */,
+				167BE4CD2C5A9A6600E8E7CA /* RealmSwift */,
+			);
 			productName = ToDoListWithRealm;
 			productReference = 167BE4992C5A920300E8E7CA /* ToDoListWithRealm.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +203,10 @@
 				Base,
 			);
 			mainGroup = 167BE4902C5A920300E8E7CA;
+			packageReferences = (
+				167BE4C92C5A9A2800E8E7CA /* XCRemoteSwiftPackageReference "SnapKit" */,
+				167BE4CC2C5A9A6500E8E7CA /* XCRemoteSwiftPackageReference "realm-swift" */,
+			);
 			productRefGroup = 167BE49A2C5A920300E8E7CA /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -127,7 +223,6 @@
 			files = (
 				167BE4A92C5A920600E8E7CA /* LaunchScreen.storyboard in Resources */,
 				167BE4A62C5A920600E8E7CA /* Assets.xcassets in Resources */,
-				167BE4A42C5A920300E8E7CA /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -138,23 +233,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				167BE4A12C5A920300E8E7CA /* ViewController.swift in Sources */,
 				167BE49D2C5A920300E8E7CA /* AppDelegate.swift in Sources */,
+				167BE4D22C5AA1C200E8E7CA /* ToDoListModel.swift in Sources */,
+				167BE4BD2C5A98C400E8E7CA /* ToDoListViewController.swift in Sources */,
 				167BE49F2C5A920300E8E7CA /* SceneDelegate.swift in Sources */,
+				167BE4C02C5A990B00E8E7CA /* ToDoListCell.swift in Sources */,
+				167BE4D02C5A9B7900E8E7CA /* ToDoListViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		167BE4A22C5A920300E8E7CA /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				167BE4A32C5A920300E8E7CA /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		167BE4A72C5A920600E8E7CA /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -296,7 +386,6 @@
 				INFOPLIST_FILE = ToDoListWithRealm/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -323,7 +412,6 @@
 				INFOPLIST_FILE = ToDoListWithRealm/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -361,6 +449,38 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		167BE4C92C5A9A2800E8E7CA /* XCRemoteSwiftPackageReference "SnapKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SnapKit/SnapKit.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.7.1;
+			};
+		};
+		167BE4CC2C5A9A6500E8E7CA /* XCRemoteSwiftPackageReference "realm-swift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/realm/realm-swift.git";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		167BE4CA2C5A9A2800E8E7CA /* SnapKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 167BE4C92C5A9A2800E8E7CA /* XCRemoteSwiftPackageReference "SnapKit" */;
+			productName = SnapKit;
+		};
+		167BE4CD2C5A9A6600E8E7CA /* RealmSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 167BE4CC2C5A9A6500E8E7CA /* XCRemoteSwiftPackageReference "realm-swift" */;
+			productName = RealmSwift;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 167BE4912C5A920300E8E7CA /* Project object */;
 }
